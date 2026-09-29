@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anmol Mother's Dish - premium masalas and tea, tradition in every bite.">
+    <title>AMD | Anmol Mother's Dish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="topbar">
+        <p>Authentic Indian Masalas & Premium Tea</p>
+        <p>Fatehpur Shekhawati • Rajasthan</p>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <a href="#home" class="logo-link" aria-label="AMD Home">
+            <img src="images/logo.png" alt="AMD - Anmol Mother's Dish" style="border-radius: 100%;">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#quality">Our Quality</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <label class="search-box">
+                <span>⌕</span>
+                <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+            </label>
+            <button class="cart-button" id="cartButton" aria-label="Shopping cart">
+                🛒 <span id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">TRADITION IN EVERY BITE</span>
+                <h1>The Taste of <em>Home.</em></h1>
+                <p>
+                    Premium masalas and carefully selected teas inspired by
+                    the warmth, aroma and authentic taste of a mother's kitchen.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+                <div class="hero-features">
+                    <span>✦ Carefully Selected</span>
+                    <span>✦ Hygienically Packed</span>
+                    <span>✦ Authentic Flavour</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <img src="images/gold-tea.jpg" alt="AMD Premium Gold Tea">
+                    <div class="hero-card-caption">
+                        <strong>Premium Gold Tea</strong>
+                        <span>A perfect blend of richness & aroma</span>
+                    </div>
+                </div>
+                <div class="seal">AMD<br><small>QUALITY</small></div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about section" id="about">
+            <div class="section-image">
+                <img src="images/logo.png" alt="Anmol Mother's Dish logo">
+            </div>
+            <div class="section-content">
+                <span class="eyebrow">ABOUT AMD</span>
+                <h2>From our kitchen <em>to your home.</em></h2>
+                <p>
+                    Anmol Mother's Dish is built around a simple idea: everyday
+                    food should carry the warmth and flavour of home.
+                </p>
+                <p>
+                    Our collection brings together traditional Indian masalas
+                    and premium tea products, presented in carefully designed,
+                    freshness-focused packaging.
+                </p>
+
+                <div class="info-grid">
+                    <div>
+                        <b>01</b>
+                        <span>Traditional Flavour</span>
+                    </div>
+                    <div>
+                        <b>02</b>
+                        <span>Carefully Packed</span>
+                    </div>
+                    <div>
+                        <b>03</b>
+                        <span>Everyday Quality</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRODUCTS ===== -->
+        <section class="products-section section" id="products">
+            <div class="section-heading">
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Masala & Tea <em>Collection</em></h2>
+                <p>Explore the AMD range and discover a flavour for every kitchen.</p>
+            </div>
+
+            <div class="filter-row">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="masala">Masalas</button>
+                <button class="filter-btn" data-filter="tea">Tea</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card" data-category="masala" data-name="Red Chilli Powder">
+                    <div class="product-image">
+                        <img src="images/red-chilli.jpg" alt="AMD Red Chilli Powder">
+                        <span class="product-badge">MASALA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>250g</span>
+                        <h3>Red Chilli Powder</h3>
+                        <p>Rich colour and bold chilli flavour for everyday cooking.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Red Chilli Powder">View Details</button>
+                            <button class="add-cart" data-name="Red Chilli Powder">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="masala" data-name="Turmeric Powder">
+                    <div class="product-image">
+                        <img src="images/turmeric.jpg" alt="AMD Turmeric Powder">
+                        <span class="product-badge">MASALA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>250g</span>
+                        <h3>Turmeric Powder</h3>
+                        <p>Warm colour and traditional turmeric character for Indian dishes.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Turmeric Powder">View Details</button>
+                            <button class="add-cart" data-name="Turmeric Powder">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="masala" data-name="Special Chilli">
+                    <div class="product-image">
+                        <img src="images/special-chilli.jpg" alt="AMD Special Chilli">
+                        <span class="product-badge">MASALA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>250g</span>
+                        <h3>Special Chilli</h3>
+                        <p>A versatile chilli blend created for flavourful everyday recipes.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Special Chilli">View Details</button>
+                            <button class="add-cart" data-name="Special Chilli">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="masala" data-name="Coriander Powder">
+                    <div class="product-image">
+                        <img src="images/coriander.jpg" alt="AMD Coriander Powder">
+                        <span class="product-badge">MASALA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>250g</span>
+                        <h3>Coriander Powder</h3>
+                        <p>Fragrant coriander flavour that complements curries and gravies.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Coriander Powder">View Details</button>
+                            <button class="add-cart" data-name="Coriander Powder">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="tea" data-name="Premium Gold Tea">
+                    <div class="product-image">
+                        <img src="images/gold-tea.jpg" alt="AMD Premium Gold Tea">
+                        <span class="product-badge">TEA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>250g</span>
+                        <h3>Premium Gold Tea</h3>
+                        <p>A rich, aromatic tea blend designed for a comforting cup.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Premium Gold Tea">View Details</button>
+                            <button class="add-cart" data-name="Premium Gold Tea">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="tea" data-name="Premium Silver Tea">
+                    <div class="product-image">
+                        <img src="images/silver-tea.jpg" alt="AMD Premium Silver Tea">
+                        <span class="product-badge">TEA</span>
+                    </div>
+                    <div class="product-info">
+                        <span>200g</span>
+                        <h3>Premium Silver Tea</h3>
+                        <p>A smooth tea blend with a refined aroma for everyday moments.</p>
+                        <div class="product-actions">
+                            <button class="details-btn" data-product="Premium Silver Tea">View Details</button>
+                            <button class="add-cart" data-name="Premium Silver Tea">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults">No products found.</p>
+        </section>
+
+        <!-- ===== QUALITY ===== -->
+        <section class="quality section" id="quality">
+            <div class="section-heading light">
+                <span class="eyebrow">WHY AMD</span>
+                <h2>Made with <em>care.</em></h2>
+                <p>Our presentation is inspired by traditional Indian craftsmanship and a focus on freshness.</p>
+            </div>
+
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">✦</div>
+                    <h3>Selected Ingredients</h3>
+                    <p>Products are presented as carefully selected ingredients for flavour-focused cooking and tea moments.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">◈</div>
+                    <h3>Freshness Focus</h3>
+                    <p>Resealable-style packaging is designed around convenient storage and maintaining product freshness.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">❖</div>
+                    <h3>Traditional Inspiration</h3>
+                    <p>AMD combines familiar Indian flavours with a premium visual identity inspired by home kitchens.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">✧</div>
+                    <h3>Carefully Packed</h3>
+                    <p>A clean, premium presentation makes the collection suitable for everyday use and gifting.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRODUCT SHOWCASE ===== -->
+        <section class="showcase section">
+            <div>
+                <span class="eyebrow">THE AMD EXPERIENCE</span>
+                <h2>Simple ingredients.<br><em>Beautiful flavour.</em></h2>
+                <p>
+                    Bring colour, aroma and the comfort of familiar Indian flavours
+                    into your everyday cooking and tea rituals.
+                </p>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+            <img src="images/coriander.jpg" alt="AMD Coriander Powder">
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact section" id="contact">
+            <div class="contact-copy">
+                <span class="eyebrow">CONTACT AMD</span>
+                <h2>Let's bring the taste of home <em>to your kitchen.</em></h2>
+                <p>For product enquiries, wholesale conversations or general information, get in touch with us.</p>
+
+                <div class="contact-list">
+                    <div><b>Location</b><span>Fatehpur Shekhawati, Rajasthan</span></div>
+                    <div><b>Phone</b><span>+91 91 91 91 8055</span></div>
+                    <div><b>Email</b><span>info@anmolmothersdish.com</span></div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h3>Send an Enquiry</h3>
+
+                <label>
+                    Name
+                    <input type="text" id="name" required placeholder="Your name">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" id="email" required placeholder="you@example.com">
+                </label>
+
+                <label>
+                    Message
+                    <textarea id="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+                </label>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="AMD - Anmol Mother's Dish">
+                <p>Tradition in Every Bite.</p>
+                <span>Premium Masala & Tea Collection</span>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#quality">Our Quality</a>
+            </div>
+
+            <div>
+                <h3>Our Collection</h3>
+                <a href="#products">Masalas</a>
+                <a href="#products">Premium Gold Tea</a>
+                <a href="#products">Premium Silver Tea</a>
+                <a href="#contact">Product Enquiry</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>Fatehpur Shekhawati</p>
+                <p>+916350144717</p>
+                <p>info@anmolmothersdish.com</p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> AMD (Anmol Mother's Dish). All Rights Reserved.</p>
+            <p>Designed with a traditional premium identity.</p>
+        </div>
+    </footer>
+
+    <!-- ===== PRODUCT MODAL ===== -->
+    <div class="modal" id="productModal" aria-hidden="true">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+            <span class="eyebrow">AMD PRODUCT</span>
+            <h2 id="modalTitle">Product</h2>
+            <p id="modalText">Product information.</p>
+            <button class="btn btn-primary" id="modalAdd">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
